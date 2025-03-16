@@ -1,0 +1,57 @@
+name: architecture_template_v2
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+homepage: 'none'
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  #Core
+  kartal: ^4.1.0
+  vexana: ^5.0.3
+  equatable: ^2.0.7
+  flutter_riverpod: ^2.6.1
+  json_annotation: ^4.9.0
+  envied: ^1.1.1
+
+  widgets:
+    path: module/widgets
+
+# dependency_overrides:
+#   cupertino_icons: 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  very_good_analysis: ^7.0.0
+  build_runner: ^2.4.15
+  flutter_gen_runner: ^5.10.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app/app_icon.png"
+  remove_alpha_ios: true
+
+flutter_gen:
+  output: lib/product/generated/
+  integrations:
+    lottie: true
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
