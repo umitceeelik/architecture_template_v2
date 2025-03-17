@@ -23,8 +23,6 @@ dependencies:
   flutter_riverpod: ^2.6.1
 
   # Config
-  envied: ^1.1.1
-  json_annotation: ^4.9.0
   easy_localization: ^3.0.7+1
 
   #Utility
@@ -36,6 +34,9 @@ dependencies:
   widgets:
     path: module/widgets
 
+  gen:
+    path: module/gen
+
 # dependency_overrides:
 #   cupertino_icons: 
 
@@ -45,21 +46,13 @@ dev_dependencies:
 
   flutter_lints: ^5.0.0
   very_good_analysis: ^7.0.0
-  build_runner: ^2.4.15
-  flutter_gen_runner: ^5.10.0
   flutter_launcher_icons: ^0.14.3
-  envied_generator: ^1.1.1
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/app/app_icon.png"
   remove_alpha_ios: true
-
-flutter_gen:
-  output: lib/product/generated/
-  integrations:
-    lottie: true
 
 flutter:
   uses-material-design: true
